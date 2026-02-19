@@ -29,7 +29,7 @@ https://github.com/yourusername/ai-email-agent
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ai-email-agent.git
+   git clone https://github.com/Eisaakber//ai-email-agent.git
    cd ai-email-agent
 
 Set up EmailJS
