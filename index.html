@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Email Agent – Local GPT4All</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Local AI Email Helper (GPT4All)</h1>
+    <p>Uses GPT4All running on your computer → completely offline AI + EmailJS to send</p>
+    <p><strong>Important:</strong> GPT4All app must be open with "Local API Server" enabled (port 4891)</p>
+
+    <form id="emailForm">
+      <label>Your name:</label>
+      <input type="text" id="fromName" placeholder="J Din" required>
+
+      <label>Recipient email:</label>
+      <input type="email" id="toEmail" placeholder="someone@example.com" required>
+
+      <label>Recipient name:</label>
+      <input type="text" id="toName" placeholder="Ahmed" required>
+
+      <label>Topic / Subject idea:</label>
+      <input type="text" id="topic" placeholder="Request updated price list 2026" required>
+
+      <label>Extra details / tone / points to include:</label>
+      <textarea id="extra" rows="4" placeholder="Be polite and professional, mention our last meeting, ask them to send the latest catalog PDF..."></textarea>
+
+      <button type="submit">Generate Email with Local AI</button>
+    </form>
+
+    <div id="preview" class="preview hidden">
+      <h3>Generated Email (from local GPT4All)</h3>
+      <pre id="emailContent"></pre>
+      <button id="sendBtn">Send This Email via EmailJS</button>
+      <button id="editBtn">Edit / Generate Again</button>
+    </div>
+
+    <p id="status" style="color: #e67e22; font-weight: bold;"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
