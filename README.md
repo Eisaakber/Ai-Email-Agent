@@ -6,9 +6,6 @@ You describe the topic, recipient, and extra details → the local LLM (via LM S
 
 Fully runs in your browser + local machine. No data leaves your computer except the final email send.
 
-https://github.com/yourusername/ai-email-agent  
-*(replace with your actual repo URL after creating it)*
-
 ## Features
 - 100% local AI generation (using LM Studio, Ollama, or GPT4All)
 - Beautiful single-page interface (HTML + CSS + JS)
